@@ -6,6 +6,8 @@
 body {
   height: 100vh;
   background-color: $bgc-light;
+
+  
   
   @media all and (min-width: 730px) {
     background: linear-gradient(110deg, $bgc-light 50%, $bgc-dark 50%) no-repeat fixed center;
@@ -15,21 +17,27 @@ body {
 .container {
   width: max-content;
   margin: auto;  
-  padding: 1rem;
+  padding: .6rem;
 
+  @media all and (min-width: 400px) {
+    padding: 0 1.5rem;
+  }
+  
   @media all and (min-width: 730px) {
     width: 100%;
     max-width: 870px;
   }
   
   header {
-    width: 85%;
-    margin: auto;
-    margin-bottom: 2rem;
+    padding: 2rem 1rem;   
+    
+    @media all and (min-width: 400px) {
+      padding: 2rem 0;
+    }
+    
     @media all and (min-width: 730px) {
       width: 100%;
       margin: 0;
-      margin-bottom: 2rem;
     }
   }
 
@@ -50,17 +58,23 @@ body {
 //-------------------------------//  
 
 .form {
-  width: 90%;
+  width: 100%;
+  padding: 0 1rem;
   align-self: center;
   flex: 1;
   order: 2;
 
-  @media all and (min-width: 730px) {
-    order: 1;
-  }
-
   .form-section {
     margin-bottom: 2.5rem;
+  }
+
+  @media all and (min-width: 400px) {
+    padding: 0;
+  }
+  
+  @media all and (min-width: 730px) {
+    width: 90%;
+    order: 1;
   }
 }
 
@@ -70,11 +84,13 @@ body {
   .selected {
     border: solid 1px $select-palette-selected;
   }
+  
   li {
     margin: 0;
     display: flex;
     padding: 3px;
     border: solid 1px $select-palette-border;
+    
     &:hover {
       opacity: 0.6;
       border: solid 1px $select-palette-hover;
@@ -92,6 +108,7 @@ body {
   li {
     margin-bottom: 1rem;
   }
+  
   input {
     width: 100%;
     padding: .6rem 0;
@@ -118,9 +135,10 @@ body {
   padding: .8rem 2rem;
   //background-color: $btn-bgc;
   border: $border;
-  &:hover  { border: $border-hover }
-  &:active  { 
-    
+  &:hover  { 
+    border: $border-hover 
+  }
+  &:active  {   
     background-color: $btn-bgc-active; 
   }
 }
@@ -129,13 +147,19 @@ body {
 //-------------------------------//  
   
 .card {
+  margin-left: -1rem;
+  margin-right:  -1rem;
   flex: 1;
   order: 1;
 
+  @media all and (min-width: 400px) {
+    margin: 0;
+  }
+
   @media all and (min-width: 730px) {
     width: auto;
-      flex: 0;
-      order: 2;
+    flex: 0;
+    order: 2;
   }
 
   > :first-child {
@@ -144,10 +168,13 @@ body {
     
   &-front,
   &-back {
-    width: 370px;
-    height: 230px;
+    width: 360px;
+    height: 220px;
     background-color: $card-bgc;
     box-shadow: $card-box-shadow;
+    @media all and (min-width: 400px) {
+      
+    }
   }
   &-front {
     display: flex;
