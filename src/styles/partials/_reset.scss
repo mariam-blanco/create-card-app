@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+    
+  ul {
+    list-style: none;
+  }
+  input {
+    box-shadow: none;
+    outline: none;
+  }
+    
+  button {
+    border: 0;
+    outline: none;
+  } 
+
+  // Por defecto, la los navegadores utilizan Arial como 
+  // fuente para 'inputs' y botones. También establecen en tamaño.
+  
+  input, 
+  button,  
+  input::placeholder {
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem; 
+  }

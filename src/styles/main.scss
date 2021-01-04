@@ -1,0 +1,210 @@
+@import './partials/reset';
+@import './partials/variables';
+@import './partials/mixins';
+@import './partials/typography';
+
+body {
+  height: 100vh;
+  margin: 1rem;
+  background-color: $bgc-light;
+  
+  @media all and (min-width: 730px) {
+    background: linear-gradient(110deg, $bgc-light 50%, $bgc-dark 50%) no-repeat fixed center;
+  }
+}
+  
+.container {
+  width: max-content;
+  margin: auto;  
+  padding: 1rem;
+
+  @media all and (min-width: 730px) {
+    width: 100%;
+    max-width: 870px;
+  }
+  
+  header {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 2rem;
+    @media all and (min-width: 730px) {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 2rem;
+    }
+  }
+
+  main {
+    width: 100%;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    
+    @media all and (min-width: 730px) {
+      flex-direction: row;
+    }
+  }
+} 
+
+//----------- #FORM -------------//
+//-------------------------------//  
+
+.form {
+  width: 85%;
+  align-self: center;
+  flex: 1;
+  order: 2;
+
+  @media all and (min-width: 730px) {
+    order: 1;
+  }
+
+  .form-section {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.palettes {
+  display: flex;
+  gap: 1rem;
+  .selected {
+    border: solid 1px $select-palette-selected;
+  }
+  li {
+    margin: 0;
+    display: flex;
+    padding: 3px;
+    border: solid 1px $select-palette-border;
+    &:hover {
+      opacity: 0.6;
+      border: solid 1px $select-palette-hover;
+    }
+    
+    div {
+      width: 1.5rem;
+      height: 2rem;
+    } 
+  }
+}
+
+.form-fields {
+  
+  li {
+    margin-bottom: 1rem;
+  }
+  input {
+    width: 100%;
+    padding: .6rem 0;
+    color: $input-color;
+    background-color: $input-bgc-color;
+    border: 0; 
+    border-bottom: $border;
+    
+    &::placeholder { color: $input-placeholder-color }
+    
+    &:hover  { border-bottom: $border-hover }
+    &:focus  { border-bottom: $border-focus }
+    // &:active { border-bottom: solid 1px $input-active-border-color }
+
+    @media all and (min-width: 730px) {
+      max-width: 300px;
+      min-width: 250px;
+    }
+  } 
+}
+
+
+.form button {
+  padding: .8rem 2rem;
+  //background-color: $btn-bgc;
+  border: $border;
+  &:hover  { border: $border-hover }
+  &:active  { 
+    
+    background-color: $btn-bgc-active; 
+  }
+}
+
+//----------- #CARD -------------//
+//-------------------------------//  
+  
+.card {
+  flex: 1;
+  order: 1;
+
+  @media all and (min-width: 730px) {
+    width: auto;
+      flex: 0;
+      order: 2;
+  }
+
+  > :first-child {
+    margin-bottom: 1.5rem;
+  }
+    
+  &-front,
+  &-back {
+    width: 390px;
+    height: 240px;
+    background-color: $card-bgc;
+    box-shadow: $card-box-shadow;
+  }
+  &-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &-back { 
+    display: flex;
+    align-items: center;
+  }
+}
+
+.card {
+  
+  .content {
+    padding: .8rem;
+  }
+  
+  &-front > .content {
+    text-align: center;
+    flex: 1;
+    padding-top: 20%;
+  }
+
+  &-back > .content {
+    width: 80%;
+    margin-top: 2rem;
+    hr {
+      margin: 1rem 0;
+      border-top: $card-color-light;
+    }
+  }
+}
+.card {
+
+  .colors > div {
+    flex: 1;
+  }
+
+  &-front > .colors {
+    height: 35px;
+    display: flex;
+    border-bottom: $card-colors-border;
+  }
+
+  &-back > .colors {
+    height: 100%;
+    width: 35px;
+    display: flex;
+    flex-direction: column;
+    border-right: $card-colors-border;
+  }
+}
+
+//-------- Palettes colors --------//  
+
+.palette-a { @include palette($a-color-01, $a-color-02, $a-color-03) }
+.palette-b { @include palette($b-color-01, $b-color-02, $b-color-03) }    
+.palette-c { @include palette($c-color-01, $c-color-02, $c-color-03) }

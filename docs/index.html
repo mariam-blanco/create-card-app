@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tarjeta de visita</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>  
+  <body>
+    <div class="container">
+      <header>
+        <h1>Tarjeta de visita</h1> 
+      </header>
+      <main>
+        
+        <!--------------------------------- 
+           ++++++++++++ FORM ++++++++++++
+        -----------------------------------> 
+        <div class="form">
+          <form class="js-form">
+            <div class="form-section">
+              <h3>Selecciona una paleta:</h3>
+              <!-- Inicio Palettes -->
+              <ul class="palettes js-palettes">
+                <li class="palette-a selected">
+                  <div class="color-01"></div>
+                  <div class="color-02"></div>
+                  <div class="color-03"></div>
+                </li>
+                <li class="palette-b">
+                  <div class="color-01"></div>
+                  <div class="color-02"></div>
+                  <div class="color-03"></div>
+                </li>
+                <li class="palette-c">
+                  <div class="color-01"></div>
+                  <div class="color-02"></div>
+                  <div class="color-03"></div>
+                </li>
+              </ul><!-- Fin Palettes -->
+            </div>
+            <div class="form-section">
+            <h3>Introduce tus datos:</h3>
+              <!-- Inicio Form inputs -->
+              <ul class="form-fields">
+                <li>
+                  <input class="js-name" type="text" name="name" placeholder="Nombre y apellidos" maxlength="35" required>
+                </li>
+                
+                <li>
+                  <input class="js-job" type="text" name="job" placeholder="Ocupación" maxlength="22" required>
+                </li>
+                <li>
+                  <input class="js-address" type="text" name="address" placeholder="Dirección" required>
+                </li>
+                <li>
+                  <input class="js-city" type="text" name="city" placeholder="Ciudad" required>
+                </li>
+                <li class="form-field">
+                  <input class="js-phone" type="tel" name="phone" placeholder="Móvil" required>
+                </li>
+                <li class="form-field">
+                  <input class="js-email" type="email" name="email" placeholder="Email" required>
+                </li>
+              </ul>
+          </div>
+          <button class="js-reset" type="reset" value="Borrar">Borrar</button>  
+          </form>
+        </div>
+        
+        <!--------------------------------- 
+          ++++++++++++ CARD ++++++++++++
+        ----------------------------------->    
+        <div class="card palette-a js-card">
+            <!-- Inicio Card-front -->
+            <div class="card-front">
+              <div class="colors">
+                <div class="color-01"></div>
+                <div class="color-02"></div>
+                <div class="color-03"></div>
+              </div>
+              <div class="content">
+                <h2 class="js-card-name">Nombre Apellidos</h2>
+                <h5 class="js-card-job">Ocupación</h5>
+              </div>
+            </div><!-- Fin Card-front -->
+            <!-- Inicio Card-back -->
+            <div class="card-back">
+              <div class="colors">
+                <div class="color-01"></div>
+                <div class="color-02"></div>
+                <div class="color-03"></div>
+              </div>
+              <div class="content">
+                <h2 class="js-card-name">Nombre Apellidos</h2>
+                <h5 class="js-card-job">Ocupación</h5>
+                <hr/>
+                <p class="js-card-address">Dirección</p>
+                <p class="js-card-city">Ciudad</p>
+                <p>T. <span class="js-card-phone">000 000 000</span></p>
+                <p class="js-card-email">hola@email.com</p>
+              </div>
+            </div><!-- Fin Card-back -->
+        </div>
+      </main>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+
+// --- General colors --------------- //
+$prueba: green;
+$white:         #fff;
+$grey-light:    hsl(0, 0%, 70%);
+$grey:          hsl(0, 0%, 60%);
+$black:         hsl(0, 0%, 0%);
+
+$base-color:    $black;
+$focus-color:   #0288d1;
+$hover-color:   $base-color;
+// $active-color: $base-color;
+
+// --- Background colors ------------ //
+
+$bgc-light: #F7F7F7;
+$bgc-dark: #4C4C4C;
+
+// --- Palettes colors -------------- //
+
+$a-color-01: #ECC368;
+$a-color-02: #C9553C;
+$a-color-03: #2D4A69;
+
+$b-color-01: #282F40;
+$b-color-02: #A3B8C3;
+$b-color-03: #E9C3B9;
+
+$c-color-01: #a00037;
+$c-color-02: #d81b60;
+$c-color-03: #ff5c8d;
+
+// --- Card colors ------------------ //
+
+$card-color:               #050d15;
+$card-color-light:         #5c748a;
+$card-bgc:                 $white;
+$card-colors-border:       solid 5px #ebe9e0;
+$card-box-shadow:          -10px 15px 20px 0px rgba($black,.3);
+
+// --- Form select palette ---------- //
+
+$select-palette-border:     $white;
+$select-palette-selected:   $base-color;
+
+$select-palette-hover:      $hover-color;;
+$select-palette-focus:      $focus-color;
+
+// --- Form inputs & button ------------- //
+
+$input-color:               $base-color; 
+$input-bgc-color:           transparent;
+$input-placeholder-color:   $grey;
+
+$border:       solid 1px $grey-light; 
+$border-hover: solid 1px $hover-color;
+$border-focus: solid 1px $focus-color;
+$border-active: solid 1px $focus-color; 
+
+$btn-bgc: #F7F7F7;
+$btn-bgc-active: #e6e6e6;

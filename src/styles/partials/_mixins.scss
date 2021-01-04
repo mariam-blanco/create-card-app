@@ -1,0 +1,5 @@
+@mixin palette($color1, $color2, $color3) {
+  .color-01 { background-color: $color1 }
+  .color-02 { background-color: $color2 }
+  .color-03 { background-color: $color3 }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "create-card-app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "./node_modules/.bin/gulp"
+  },
+  "keywords": [],
+  "author": "mariamblanko@yahoo.es",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "browser-sync": "^2.26.13"
+  },
+  "dependencies": {
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-sass": "^4.1.0",
+    "gulp-terser": "^2.0.0"
+  }
+}
