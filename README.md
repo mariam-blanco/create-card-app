@@ -5,9 +5,17 @@ App to create a business card with your personal details and choose a palette of
 
 ## Description
 
+1. The user can choose a palette of colors for the card.
+2. The user insert the data in the input fields and it is shown in the card.
+3. The user data and the palette is stored in `localStorage`.
+4. If the user close the browser the app will get the data and the palette stored in `localStorage`.
+5. A reset button delete the data stored.
 
 ![Create Card App Gif](https://github.com/mariam-blanco/create-card-app/blob/master/src/media/create-card-app.gif)
 
+6. Responsive design.
+
+![Create Card App Gif](https://github.com/mariam-blanco/create-card-app/blob/master/src/media/create-card-app_responsive.gif)
 
 ## Technologies
 - JavaScript
