@@ -3,7 +3,7 @@
 ## General info
 App to create a business card with your personal details and choose a palette of colors.
 
-https://mariam-blanco.github.io/create-card-app/ (https://mariam-blanco.github.io/create-card-app/)
+[https://mariam-blanco.github.io/create-card-app](https://mariam-blanco.github.io/create-card-app/)
 
 ## Description
 
